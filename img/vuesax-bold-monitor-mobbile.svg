@@ -1,0 +1,7 @@
+<svg id="vuesax_bold_monitor-mobbile" data-name="vuesax/bold/monitor-mobbile" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="monitor-mobbile">
+    <path id="Vector" d="M8.99.21A3.605,3.605,0,0,0,7.64,0H2.36C.62,0,0,.62,0,2.38v7.74A3.524,3.524,0,0,0,.22,11.5c.31.72.97,1,2.14,1H7.64c1.74,0,2.36-.63,2.36-2.38V2.38C10,1.19,9.72.52,8.99.21ZM6,10.25H4a.17.17,0,0,1-.07-.01.62.62,0,0,1-.39-.16.706.706,0,0,1-.29-.58A.755.755,0,0,1,4,8.75H6a.75.75,0,0,1,0,1.5Z" transform="translate(12 9.5)" fill="#236bfe"/>
+    <path id="Vector-2" data-name="Vector" d="M18.98,4.19V5a1,1,0,0,1-1,1H12.35C9.79,6,8.49,7.31,8.49,9.88V19a1,1,0,0,1-1,1H5.54a.71.71,0,1,1,0-1.42H7.49V14.75H3.99A4.2,4.2,0,0,1,0,10.56V4.19A4.2,4.2,0,0,1,4.2,0H14.79A4.2,4.2,0,0,1,18.98,4.19Z" transform="translate(2.012 2)" fill="#236bfe"/>
+    <path id="Vector-3" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(24 24) rotate(180)" fill="none" opacity="0"/>
+  </g>
+</svg>

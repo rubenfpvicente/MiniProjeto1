@@ -1,0 +1,8 @@
+<svg id="vuesax_bold_frame" data-name="vuesax/bold/frame" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="frame">
+    <path id="Vector" d="M14.167,29.833V3.5C14.167,1,13.1,0,10.45,0H3.717C1.067,0,0,1,0,3.5V29.833c0,2.5,1.067,3.5,3.717,3.5H10.45C13.1,33.333,14.167,32.333,14.167,29.833Z" transform="translate(4.168 3.333)" fill="#236bfe"/>
+    <path id="Vector-2" data-name="Vector" d="M14.167,11.067V3.933A3.835,3.835,0,0,0,10.45,0H3.717A3.835,3.835,0,0,0,0,3.933v7.133A3.835,3.835,0,0,0,3.717,15H10.45A3.835,3.835,0,0,0,14.167,11.067Z" transform="translate(21.668 21.667)" fill="#236bfe"/>
+    <path id="Vector-3" data-name="Vector" d="M14.167,11.067V3.933A3.835,3.835,0,0,0,10.45,0H3.717A3.835,3.835,0,0,0,0,3.933v7.133A3.835,3.835,0,0,0,3.717,15H10.45A3.835,3.835,0,0,0,14.167,11.067Z" transform="translate(21.668 3.333)" fill="#236bfe"/>
+    <path id="Vector-4" data-name="Vector" d="M0,0H40V40H0Z" transform="translate(40 40) rotate(180)" fill="none" opacity="0"/>
+  </g>
+</svg>

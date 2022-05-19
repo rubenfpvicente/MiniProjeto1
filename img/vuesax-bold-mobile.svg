@@ -1,0 +1,6 @@
+<svg id="vuesax_bold_mobile" data-name="vuesax/bold/mobile" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="mobile">
+    <path id="Vector" d="M20.4,0H6.267C1.667,0,0,1.667,0,6.35V26.983c0,4.683,1.667,6.35,6.267,6.35H20.383c4.617,0,6.283-1.667,6.283-6.35V6.35C26.667,1.667,25,0,20.4,0ZM13.333,28.833a2.917,2.917,0,1,1,2.917-2.917A2.931,2.931,0,0,1,13.333,28.833Zm3.333-21.75H10a1.25,1.25,0,0,1,0-2.5h6.667a1.25,1.25,0,0,1,0,2.5Z" transform="translate(6.668 3.333)" fill="#236bfe"/>
+    <path id="Vector-2" data-name="Vector" d="M0,0H40V40H0Z" transform="translate(40 40) rotate(180)" fill="none" opacity="0"/>
+  </g>
+</svg>

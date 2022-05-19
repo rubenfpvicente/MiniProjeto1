@@ -1,0 +1,60 @@
+@use 'base' as *;
+
+// ESTILOS GERAIS
+body{
+    font-family: $poppins;
+}
+
+.container{
+    width: 1053px;
+    margin: 0 auto;
+}
+
+// ESTILOS ESPECÍFICOS
+
+.barra-menu{
+    .container{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-bottom: 1rem;      
+    }
+    nav{
+        display: flex;
+        align-items: flex-end;
+    }
+    .menu{
+        display: flex;        
+        align-items: flex-end;
+        li a{
+            color: $azul;
+            margin: 0 1rem;
+            position: relative;
+            .img-utilizador{
+                border-radius: 50%;
+            }
+            .barra-link{
+                width: 0%;
+                height: 5px;
+                background-color: $laranja;
+                border-radius: 10px;
+                position: absolute;
+                bottom: calc(-1rem - 3px);
+                left: 0;
+                transition: 0.3s ease-in-out;
+            }
+            &:hover, &.active{
+                .barra-link{
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+    .barra{
+        width: 1px;
+        height: 80px;
+        background-color: rgba($color: $azul, $alpha: 0.2);
+        margin: 0 1rem;
+        margin-bottom: -1rem;
+    }
+}
