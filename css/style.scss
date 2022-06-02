@@ -1,3 +1,4 @@
+@use 'reset';
 @use 'base' as *;
 
 // ESTILOS GERAIS
@@ -26,26 +27,41 @@ body{
 
 // ESTILOS ESPECÍFICOS
 
-.barra-menu{
-    .container{
-        background-color: $azulEscu;
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
-        }
-        nav{
-            display: flex;
+.landing{
+    height: 850px;
+    width: 100%;
+    background-image: url('../img/fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .barra-menu{
+        .container{
+            display:flex;
+            justify-content: space-around;
             align-items: center;
-            justify-content: space-evenly;
-        }
-        .menu{
-            display: flex;
-            align-items: center; 
-            justify-content: space-between;      
-            li a{
-                color: white;
-                margin: 0 1rem;
-                text-decoration: none;
+            padding: 2rem 5rem;
             }
-        }
+            nav{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .menu{
+                display: flex;
+                align-items: center; 
+                justify-content: space-between;  
+                li a{
+                    color: rgba(255,255,255,0.5);
+                    margin: 0 3rem;
+                    transition: 0.3s ease-in-out;
+                    &:hover, &.active{
+                        color: white;
+                    }
+                }
+            }
+    }
+}
+
+
+.landing{
 }
