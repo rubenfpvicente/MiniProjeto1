@@ -429,8 +429,46 @@ body {
   gap: 1rem;
 }
 
+.footer {
+  height: 490px;
+  width: 100vw;
+  background-image: url("../img/fundo-footer.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  row-gap: 2rem;
+  gap: 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.footer input {
+  background-color: #F4F9FF;
+  color: rgba(35, 107, 254, 0.7);
+  padding: 0 3rem 0 2rem;
+  height: 50px;
+  width: 350px;
+  font-size: 0.9rem;
+}
+.footer input::-moz-placeholder {
+  color: rgba(35, 107, 254, 0.7);
+}
+.footer input:-ms-input-placeholder {
+  color: rgba(35, 107, 254, 0.7);
+}
+.footer input::placeholder {
+  color: rgba(35, 107, 254, 0.7);
+}
+
 .landing {
-  height: 850px;
+  height: 100vh;
   width: 100vw;
   background-image: url("../img/fundo.png");
   background-size: cover;
@@ -462,6 +500,9 @@ body {
   color: white;
   font-weight: 700;
   font-size: 1rem;
+}
+.landing .content {
+  display: flex;
 }
 .landing .content .section1 {
   width: 50%;
@@ -511,18 +552,45 @@ body {
 .landing .content .imagelanding {
   width: 50%;
   height: auto;
+}
+.landing .content .imagelanding .grelha {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 110px 280px 185px;
+  grid-template-rows: 330px 95px 40px;
+}
+.landing .content .imagelanding .imagem1 {
   background-image: url("../img/imagem1.png");
   background-size: cover;
   background-position: center;
+  border: 4px solid white;
+  grid-column: 2/4;
+  grid-row: 1/4;
+  z-index: 1;
+}
+.landing .content .imagelanding .designer {
+  background-color: white;
+  grid-column: 1/3;
+  grid-row: 2/3;
+  z-index: 2;
+}
+.landing .content .imagelanding .designer .icon {
+  background-color: rgba(35, 107, 254, 0.7);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.3s;
 }
 
-.footer {
-  height: 490px;
+.good-life {
+  height: 100vh;
   width: 100vw;
-  background-image: url("../img/fundo.png");
+  background-color: #F4F9FF;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
-  grid-template-columns: auto;
 }/*# sourceMappingURL=style.css.map */
