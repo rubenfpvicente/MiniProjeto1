@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -458,11 +458,10 @@ h3 {
   grid-row: 1/-1;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   padding: 1rem;
   row-gap: 2rem;
-  gap: 2rem;
   font-size: 1.2rem;
   text-align: center;
 }
@@ -630,20 +629,19 @@ h3 {
   background-repeat: no-repeat;
   padding: 4rem 7rem;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.good-life .imageGood-life {
-  width: 50%;
-  height: auto;
-  padding-top: 5rem;
+.good-life .container {
+  display: flex;
 }
-.good-life .imageGood-life .grelha {
+.good-life .grelha {
   display: grid;
-  width: 100%;
-  height: 100vh;
   grid-template-columns: 185px 280px 110px;
   grid-template-rows: 330px 95px 40px;
+  margin-top: 5rem;
 }
-.good-life .imageGood-life .imagem2 {
+.good-life .grelha .imagem2 {
   background-image: url("../img/imagem2.png");
   background-size: cover;
   background-position: center;
@@ -653,7 +651,7 @@ h3 {
   grid-row: 1/4;
   z-index: 1;
 }
-.good-life .imageGood-life .researcher {
+.good-life .grelha .researcher {
   background-color: white;
   grid-column: 2/4;
   grid-row: 2/3;
@@ -663,7 +661,7 @@ h3 {
   align-items: center;
   padding: 1rem;
 }
-.good-life .imageGood-life .researcher .icon {
+.good-life .grelha .researcher .icon {
   background-color: rgba(35, 107, 254, 0.07);
   width: 50px;
   height: 50px;
@@ -671,19 +669,82 @@ h3 {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: 0.3s;
 }
-.good-life .imageGood-life .researcher ul li {
+.good-life .grelha .researcher ul li {
   padding: 0.2rem;
 }
-.good-life .imageGood-life .researcher p {
+.good-life .grelha .researcher p {
   color: #9DA5B3;
   font-size: 0.75rem;
 }
-.good-life .imageGood-life .researcher .btn {
+.good-life .grelha .researcher .btn {
   width: 103px;
   height: 56px;
 }
-.good-life h2 {
+
+.section2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem 7rem;
+}
+.section2 h2 {
+  margin-bottom: 3rem;
   color: #0A1E40;
+  font-size: 3.325rem;
+  min-width: 500px;
+}
+.section2 p {
+  margin-bottom: 3rem;
+  color: rgba(10, 30, 64, 0.4);
+  min-width: 500px;
+}
+.section2 ul li {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  padding: 0.5rem;
+}
+.section2 ul li img {
+  margin-right: 1rem;
+}
+
+.connecting-steps {
+  height: 100vh;
+  width: 400px;
+}
+.connecting-steps .container {
+  display: flex;
+  padding: 4rem 7rem;
+}
+.connecting-steps .step-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.connecting-steps .step-title h2 {
+  color: #0A1E40;
+}
+.connecting-steps .step-title p {
+  color: #9DA5B3;
+}
+.connecting-steps .steps .barra {
+  width: 200px;
+  height: 1px;
+  background-color: #ECBC40;
+}
+.connecting-steps .steps .step {
+  background-color: rgba(35, 107, 254, 0.07);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #236BFE;
+  font-weight: bold;
+  font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */
