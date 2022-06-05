@@ -440,6 +440,12 @@ h3 {
   background-color: #002062;
 }
 
+.grid-3-colunas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
 .grid-4-colunas {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -716,11 +722,9 @@ h3 {
   width: 400px;
 }
 .connecting-steps .container {
-  display: flex;
   padding: 4rem 7rem;
 }
 .connecting-steps .step-title {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -730,6 +734,13 @@ h3 {
 }
 .connecting-steps .step-title p {
   color: #9DA5B3;
+}
+.connecting-steps .steps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4rem;
+  padding-right: 17rem;
 }
 .connecting-steps .steps .barra {
   width: 200px;
@@ -747,4 +758,13 @@ h3 {
   color: #236BFE;
   font-weight: bold;
   font-size: 2rem;
+}
+.connecting-steps .stepdesc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jobs {
+  background-color: #F8FAFF;
 }/*# sourceMappingURL=style.css.map */
