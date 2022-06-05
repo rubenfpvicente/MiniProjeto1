@@ -440,12 +440,6 @@ h3 {
   background-color: #002062;
 }
 
-.grid-3-colunas {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
 .grid-4-colunas {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -612,7 +606,6 @@ h3 {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: 0.3s;
 }
 .landing .content .imagelanding .designer ul li {
   padding: 0.2rem;
@@ -722,7 +715,7 @@ h3 {
   width: 400px;
 }
 .connecting-steps .container {
-  padding: 4rem 7rem;
+  padding: 5rem 7rem;
 }
 .connecting-steps .step-title {
   display: flex;
@@ -731,6 +724,7 @@ h3 {
 }
 .connecting-steps .step-title h2 {
   color: #0A1E40;
+  margin-right: 3rem;
 }
 .connecting-steps .step-title p {
   color: #9DA5B3;
@@ -740,7 +734,7 @@ h3 {
   align-items: center;
   justify-content: space-between;
   padding-top: 4rem;
-  padding-right: 17rem;
+  padding-right: 20rem;
 }
 .connecting-steps .steps .barra {
   width: 200px;
@@ -759,12 +753,213 @@ h3 {
   font-weight: bold;
   font-size: 2rem;
 }
-.connecting-steps .stepdesc {
+.connecting-steps .steps-description {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 60px;
+  padding-left: 7rem;
+}
+.connecting-steps .steps-description h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.connecting-steps .steps-description p {
+  color: #9DA5B3;
+}
+.connecting-steps .steps-description .step-desc {
+  width: 290px;
+  height: 150px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  margin-right: 6rem;
 }
 
 .jobs {
   background-color: #F8FAFF;
+}
+.jobs .container {
+  padding: 4rem 7rem;
+}
+.jobs .job-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.jobs .job-title h2 {
+  color: #0A1E40;
+}
+.jobs .job-title p {
+  color: #9DA5B3;
+}
+.jobs .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 60px;
+  grid-row-gap: 40px;
+  padding-top: 3rem;
+}
+.jobs .grid .artigo-job {
+  width: 360px;
+  height: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 2rem;
+  border-radius: 6px;
+  row-gap: 2.5rem;
+}
+.jobs .grid .artigo-job h3 {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.jobs .grid .artigo-job .icon {
+  background-color: rgba(35, 107, 254, 0.07);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.jobs .grid .artigo-job img {
+  padding: 1rem;
+  fill: #ECBC40;
+}
+.jobs .grid .artigo-job:hover {
+  background-color: #236BFE;
+}
+.jobs .grid .artigo-job:hover h3 {
+  color: white;
+}
+.jobs .grid .artigo-job:hover .icon {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.jobs .grid .artigo-job:hover .icon img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7450%) hue-rotate(68deg) brightness(108%) contrast(118%);
+}
+
+.jobless {
+  height: 100vh;
+  width: 100vw;
+  background-color: #F4F9FF;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.jobless .container {
+  display: flex;
+}
+.jobless .grelha {
+  display: grid;
+  grid-template-columns: 135px 165px 305px;
+  grid-template-rows: 130px 150px 190px;
+  margin-top: 5rem;
+}
+.jobless .grelha .imagem3 {
+  background-image: url("../img/imagem3.png");
+  background-size: cover;
+  background-position: center;
+  transform: rotate(-10deg);
+  border: 4px solid white;
+  grid-column: 2/4;
+  grid-row: 1/4;
+  z-index: 1;
+}
+.jobless .grelha .engineer {
+  background-color: white;
+  grid-column: 1/3;
+  grid-row: 2/3;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+.jobless .grelha .engineer .icon {
+  display: flex;
+  padding: 1rem 1rem;
+}
+.jobless .grelha .engineer .icon img {
+  background-color: rgba(35, 107, 254, 0.07);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.jobless .grelha .engineer .icon ul li {
+  align-self: flex-start;
+  padding: 0.2rem;
+}
+.jobless .grelha .engineer .icon p {
+  color: #0A1E40;
+  font-size: 0.75rem;
+}
+.jobless .grelha .engineer .btn {
+  width: 250px;
+  height: 44px;
+}
+
+.section3 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4rem 7rem;
+}
+.section3 h2 {
+  margin-bottom: 3rem;
+  color: #0A1E40;
+  font-size: 3.325rem;
+  min-width: 500px;
+}
+.section3 p {
+  margin-bottom: 3rem;
+  color: rgba(10, 30, 64, 0.4);
+  min-width: 500px;
+}
+.section3 ul li {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  padding: 0.5rem;
+}
+.section3 ul li img {
+  margin-right: 1rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  padding-top: 3rem;
+}
+.stats h2 {
+  margin-bottom: 3rem;
+  color: #236BFE;
+  font-size: 3.325rem;
+  max-width: 80%;
+}
+.stats p {
+  margin-bottom: 3rem;
+  color: rgba(10, 30, 64, 0.4);
+  max-width: 50%;
+}
+.stats .stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 125px;
+  height: 100px;
+  padding-left: -5rem;
+  margin-right: 5rem;
 }/*# sourceMappingURL=style.css.map */
