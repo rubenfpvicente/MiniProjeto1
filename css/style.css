@@ -912,6 +912,61 @@ footer .copyright {
 .jobless .container {
   display: flex;
 }
+.jobless .section3 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4rem 7rem;
+}
+.jobless .section3 h2 {
+  margin-bottom: 3rem;
+  color: #0A1E40;
+  font-size: 3.325rem;
+  min-width: 500px;
+}
+.jobless .section3 p {
+  margin-bottom: 3rem;
+  color: rgba(10, 30, 64, 0.4);
+  min-width: 500px;
+}
+.jobless .section3 ul li {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  padding: 0.5rem;
+}
+.jobless .section3 ul li img {
+  margin-right: 1rem;
+}
+.jobless .stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  padding-top: 3rem;
+}
+.jobless .stats h2 {
+  margin-bottom: 3rem;
+  color: #236BFE;
+  font-size: 3.325rem;
+  max-width: 80%;
+}
+.jobless .stats p {
+  margin-bottom: 3rem;
+  color: rgba(10, 30, 64, 0.4);
+  max-width: 50%;
+}
+.jobless .stats .stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 125px;
+  height: 100px;
+  padding-left: -4rem;
+  margin-right: 5rem;
+}
 .jobless .grelha {
   display: grid;
   grid-template-columns: 135px 165px 305px;
@@ -962,63 +1017,6 @@ footer .copyright {
 .jobless .grelha .engineer .btn {
   width: 250px;
   height: 44px;
-}
-
-.section3 {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 4rem 7rem;
-}
-.section3 h2 {
-  margin-bottom: 3rem;
-  color: #0A1E40;
-  font-size: 3.325rem;
-  min-width: 500px;
-}
-.section3 p {
-  margin-bottom: 3rem;
-  color: rgba(10, 30, 64, 0.4);
-  min-width: 500px;
-}
-.section3 ul li {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  padding: 0.5rem;
-}
-.section3 ul li img {
-  margin-right: 1rem;
-}
-
-.stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 10px;
-  padding-top: 3rem;
-}
-.stats h2 {
-  margin-bottom: 3rem;
-  color: #236BFE;
-  font-size: 3.325rem;
-  max-width: 80%;
-}
-.stats p {
-  margin-bottom: 3rem;
-  color: rgba(10, 30, 64, 0.4);
-  max-width: 50%;
-}
-.stats .stat {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 125px;
-  height: 100px;
-  padding-left: -4rem;
-  margin-right: 5rem;
 }
 
 .topbtn {
