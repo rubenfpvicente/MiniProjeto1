@@ -517,12 +517,27 @@ footer .copyright {
 
 @media all and (max-width: 768px) {
   body {
+    font-size: 0.9rem;
+    width: 50px;
     flex-direction: column;
   }
 
   .container {
     width: 100vw;
     margin: 0 auto;
+  }
+
+  .landing {
+    width: 100vw;
+    flex-direction: column;
+  }
+
+  .landing a {
+    display: none;
+  }
+
+  .landing .btn {
+    display: none;
   }
 }
 .landing {
