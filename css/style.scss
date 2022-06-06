@@ -55,7 +55,7 @@ h3{
     gap: 10rem;
 }
 
-.footer {
+footer {
     height: 490px;
     width: 100vw;
     background-image: url('../img/fundo-footer.png');
@@ -626,5 +626,21 @@ h3{
         height: 100px;
         padding-left: -4rem;
         margin-right: 5rem;
+    }
+}
+
+.topbtn{
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    img{
+        background-color: $amarelo;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        padding: 1.5rem;
     }
 }
