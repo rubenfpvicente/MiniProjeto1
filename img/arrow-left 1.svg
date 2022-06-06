@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.223" height="31.333" viewBox="0 0 24.223 31.333">
+  <g id="arrow-left_1" data-name="arrow-left 1" transform="translate(32.111 -5.167) rotate(90)">
+    <g id="Group">
+      <path id="Vector" d="M0,0H26.667" transform="matrix(1, 0, 0, 1, 8.333, 20)" fill="none" stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Vector-2" data-name="Vector" d="M11.667,0,.33,9.317a.916.916,0,0,0-.243.308.854.854,0,0,0,0,.748.916.916,0,0,0,.243.308L11.667,20" transform="translate(6.667 10)" fill="none" stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
