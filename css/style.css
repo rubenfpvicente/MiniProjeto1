@@ -440,10 +440,17 @@ h3 {
   background-color: #002062;
 }
 
-.grid-4-colunas {
+.grid-2-colunas {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+}
+
+.grid-3-colunas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 60px;
+  gap: 10rem;
 }
 
 .footer {
@@ -453,119 +460,69 @@ h3 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 7rem;
+}
+.footer .logo-footer {
+  display: flex;
+  flex-direction: column;
+}
+.footer .logo-footer .logo {
+  max-width: 50%;
+  margin-bottom: 2rem;
+}
+.footer .logo-footer p {
   color: white;
-  grid-column: 1/-1;
-  grid-row: 1/-1;
+  margin-bottom: 0.75rem;
+}
+.footer ul li {
+  color: white;
+  margin-bottom: 2rem;
+}
+.footer ul .active {
+  font-weight: bold;
+}
+.footer .newsletter {
+  display: flex;
+  flex-direction: column;
+}
+.footer .newsletter p {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.footer .newsletter input {
+  background-color: white;
+  width: 15.625rem;
+  height: 3.125rem;
+  padding: 0 1rem 0 0.5rem;
+  margin-top: 1rem;
+}
+.footer .newsletter .input-container {
+  position: relative;
+}
+.footer .newsletter .input-container .ico-arrow {
+  background-color: #ECBC40;
+  height: 3.15rem;
+  width: 3.125rem;
+  position: absolute;
+  top: 61%;
+  transform: translateY(-50%);
+  right: 4.2rem;
+  padding: 0.75rem;
+}
+.footer .copyright {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  padding: 1rem;
-  row-gap: 2rem;
-  font-size: 1.2rem;
-  text-align: center;
-}
-.footer input {
-  background-color: #F4F9FF;
-  color: rgba(35, 107, 254, 0.7);
-  padding: 0 3rem 0 2rem;
-  height: 50px;
-  width: 350px;
-  font-size: 0.9rem;
-}
-.footer input::-moz-placeholder {
-  color: rgba(35, 107, 254, 0.7);
-}
-.footer input:-ms-input-placeholder {
-  color: rgba(35, 107, 254, 0.7);
-}
-.footer input::placeholder {
-  color: rgba(35, 107, 254, 0.7);
+  padding-top: 2rem;
 }
 
-@media screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
   body {
-    font-size: 1.2rem;
     flex-direction: column;
   }
 
   .container {
     width: 100vw;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-
-  h2 {
-    color: white;
-    font-size: 3rem;
-    font-weight: bold;
-  }
-
-  p {
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 1.125rem;
-  }
-
-  h3 {
-    color: #0A1E40;
-    font-size: 1.125rem;
-    font-weight: bold;
-  }
-
-  .landing {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-  }
-
-  .good-life {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-  }
-
-  .connecting-steps {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-  }
-
-  .jobs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-  }
-
-  .jobless {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-  }
-
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
   }
 }
 .landing {
@@ -1045,6 +1002,6 @@ h3 {
   justify-content: center;
   width: 125px;
   height: 100px;
-  padding-left: -5rem;
+  padding-left: -4rem;
   margin-right: 5rem;
 }/*# sourceMappingURL=style.css.map */

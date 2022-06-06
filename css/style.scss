@@ -42,10 +42,17 @@ h3{
     }
 }
 
-.grid-4-colunas{
+.grid-2-colunas{
     display: grid;    
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+}
+
+.grid-3-colunas{
+    display: grid;    
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 60px;
+    gap: 10rem;
 }
 
 .footer {
@@ -55,105 +62,70 @@ h3{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white;
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 1rem;
-    row-gap: 2rem;
-    font-size: 1.2rem;
-    text-align: center;
-    input{
-        background-color:#F4F9FF;
-        color: rgba($color: $azul, $alpha: 0.7);
-        padding: 0 3rem 0 2rem;
-        height: 50px;
-        width: 350px;
-        font-size: 0.9rem;
-        &::placeholder{
-            color: rgba($color: $azul, $alpha: 0.7);      
+    padding: 7rem;
+    .logo-footer{
+        display: flex;
+        flex-direction: column;
+        .logo{
+            max-width: 50%;
+            margin-bottom: 2rem;
         }
-        
-  }
+        p{
+            color: white;
+            margin-bottom: .75rem;
+        }
+    }
+    ul{
+        li{
+            color: white;
+            margin-bottom: 2rem;
+        }
+        .active{
+            font-weight: bold;
+        }
+    }
+    .newsletter{
+        display: flex;
+        flex-direction: column;
+        p{
+            color: white;
+            margin-bottom: .5rem;
+        }
+        input{
+            background-color: white;
+            width: 15.625rem;
+            height: 3.125rem;
+            padding: 0 1rem 0 .5rem;
+            margin-top: 1rem;
+        }
+        .input-container{
+            position: relative;
+            .ico-arrow{
+                background-color: $amarelo;
+                height: 3.15rem;
+                width: 3.125rem;
+                position: absolute;
+                top: 61%;
+                transform: translateY(-50%);
+                right: 4.2rem;
+                padding: .75rem;
+            }
+        }
+    }
+    .copyright{
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+    }
 }
 
-@media screen and (max-width: 768px){
+@media all and (max-width: 768px){
     body{
-        font-size: 1.2rem;
         flex-direction: column;
     }
     .container{
         width: 100vw;
         margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-    h2{
-        color: white;
-        font-size: 3rem;
-        font-weight: bold;
-    }
-    p{
-        color: rgba(255,255,255,0.75);
-        font-size: 1.125rem;
-    }
-    h3{
-        color: $azulTitulo;
-        font-size: 1.125rem;
-        font-weight: bold;
-    }
-    .landing{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 100vh;
-
-    }
-    .good-life{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 100vh;
-    }
-    .connecting-steps{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 100vh;
-    }
-    .jobs{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 100vh;
-    }
-    .jobless{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 100vh;
-    }
-    .footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 100vh;
     }
 }
     
@@ -652,7 +624,7 @@ h3{
         justify-content: center;
         width: 125px;
         height: 100px;
-        padding-left: -5rem;
+        padding-left: -4rem;
         margin-right: 5rem;
     }
 }
