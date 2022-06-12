@@ -405,7 +405,7 @@ body {
 }
 
 .container {
-  width: 100vw;
+  width: 1120px;
   margin: 0 auto;
 }
 
@@ -515,31 +515,6 @@ footer .copyright {
   padding-top: 2rem;
 }
 
-@media all and (max-width: 768px) {
-  body {
-    font-size: 0.9rem;
-    width: 50px;
-    flex-direction: column;
-  }
-
-  .container {
-    width: 100vw;
-    margin: 0 auto;
-  }
-
-  .landing {
-    width: 100vw;
-    flex-direction: column;
-  }
-
-  .landing a {
-    display: none;
-  }
-
-  .landing .btn {
-    display: none;
-  }
-}
 .landing {
   height: 100vh;
   width: 100vw;
@@ -553,6 +528,9 @@ footer .copyright {
   justify-content: space-around;
   align-items: center;
   padding: 2rem 5rem;
+}
+.landing .barra-menu .hide-desktop {
+  display: none;
 }
 .landing .barra-menu nav {
   display: flex;
@@ -677,12 +655,6 @@ footer .copyright {
 }
 
 .good-life {
-  height: 100vh;
-  width: 100vw;
-  background-color: #F4F9FF;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   padding: 4rem 7rem;
   display: flex;
   justify-content: space-between;
@@ -767,10 +739,6 @@ footer .copyright {
   margin-right: 1rem;
 }
 
-.connecting-steps {
-  height: 100vh;
-  width: 400px;
-}
 .connecting-steps .container {
   padding: 5rem 7rem;
 }
@@ -1033,4 +1001,27 @@ footer .copyright {
   justify-content: center;
   border-radius: 50%;
   padding: 1.5rem;
+}
+
+@media all and (max-width: 600px) {
+  body {
+    font-size: 0.9rem;
+    width: 50px;
+    flex-direction: column;
+  }
+
+  .container {
+    width: 100vw;
+    margin: 0 auto;
+  }
+
+  .landing .barra-menu .container {
+    justify-content: space-between;
+  }
+  .landing .barra-menu .hide-mobile {
+    display: none;
+  }
+  .landing .barra-menu .hide-desktop {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */

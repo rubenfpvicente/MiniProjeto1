@@ -8,7 +8,7 @@ body{
 }
 
 .container{
-    width: 100vw;
+    width: 1120px;
     margin: 0 auto;
 }
 
@@ -119,31 +119,6 @@ footer {
     }
 }
 
-@media all and (max-width: 768px){
-    body{
-        font-size: .9rem;
-        width: 50px;
-        flex-direction: column;
-
-    }
-    .container{
-        width: 100vw;
-        margin: 0 auto;
-    }
-    .landing{
-        width: 100vw;
-        flex-direction: column;
-    }
-    .landing a{
-        display: none;
-    }
-    .landing .btn{
-        display: none;
-    }
-}
-    
-
-
 // ESTILOS ESPECÍFICOS
 
 .landing{
@@ -160,6 +135,9 @@ footer {
             justify-content: space-around;
             align-items: center;
             padding: 2rem 5rem;
+            }
+            .hide-desktop{
+                display: none;
             }
             nav{
                 display: flex;
@@ -291,12 +269,6 @@ footer {
     .container{
         display: flex;
     }
-    height: 100vh;
-    width: 100vw;
-    background-color: #F4F9FF;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     padding: 4rem 7rem;
     display: flex;
     justify-content: space-between;
@@ -382,8 +354,6 @@ footer {
 }
 
 .connecting-steps{
-    height: 100vh;
-    width: 400px;
     .container{
         padding: 5rem 7rem;
     }
@@ -653,5 +623,33 @@ footer {
         justify-content: center;
         border-radius: 50%;
         padding: 1.5rem;
+    }
+}
+
+@media all and (max-width: 600px){
+    body{
+        font-size: .9rem;
+        width: 50px;
+        flex-direction: column;
+
+    }
+    .container{
+        width: 100vw;
+        margin: 0 auto;
+    }
+    .landing{
+        .barra-menu{
+            .container{
+                justify-content: space-between;
+
+            }
+            .hide-mobile{
+                display: none;
+            }
+        
+            .hide-desktop{
+                display: block;
+            }
+        }
     }
 }
